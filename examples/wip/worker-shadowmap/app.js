@@ -1,10 +1,10 @@
-import {OffScreenAnimationLoop} from 'luma.gl';
+import {OffscreenAnimationLoop} from 'luma.gl';
 import createWorker from 'webworkify-webpack';
 
 // Required by webworkify-webpack :(
 const worker = createWorker(require.resolve('./worker'));
 
-const animationLoop = new OffScreenAnimationLoop({worker});
+const animationLoop = new OffscreenAnimationLoop({worker});
 
 export default animationLoop;
 
